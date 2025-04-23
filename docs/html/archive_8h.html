@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Archive Manager: Файл include/archive.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Archive Manager<span id="projectnumber">&#160;v1.0</span>
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('archive_8h.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл archive.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Работа с архивом жильцов  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="base_8h_source.html">base.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для archive.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="archive_8h__incl.png" border="0" usemap="#ainclude_2archive_8h" alt=""/></div>
+</div>
+</div>
+<p><a href="archive_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a9fcf84ecc7d2fa878117f14c6580225b" id="r_a9fcf84ecc7d2fa878117f14c6580225b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fcf84ecc7d2fa878117f14c6580225b">loadDataFromInput</a> (<a class="el" href="struct_stack.html">Stack</a> *stack, const char *filename)</td></tr>
+<tr class="memdesc:a9fcf84ecc7d2fa878117f14c6580225b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загружает данные из файла формата input.txt.  <br /></td></tr>
+<tr class="separator:a9fcf84ecc7d2fa878117f14c6580225b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3be9381694e1ddb33112c1d7bb9c60c" id="r_ad3be9381694e1ddb33112c1d7bb9c60c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3be9381694e1ddb33112c1d7bb9c60c">loadDataFromKodif</a> (<a class="el" href="struct_stack.html">Stack</a> *stack, const char *filename)</td></tr>
+<tr class="memdesc:ad3be9381694e1ddb33112c1d7bb9c60c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загружает данные из файла формата kodif.txt.  <br /></td></tr>
+<tr class="separator:ad3be9381694e1ddb33112c1d7bb9c60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad91d1cd64255529b3d3c0e42583b726a" id="r_ad91d1cd64255529b3d3c0e42583b726a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad91d1cd64255529b3d3c0e42583b726a">saveToArchive</a> (<a class="el" href="struct_stack.html">Stack</a> *stack, const char *filename)</td></tr>
+<tr class="memdesc:ad91d1cd64255529b3d3c0e42583b726a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сохраняет данные стека в бинарный файл  <br /></td></tr>
+<tr class="separator:ad91d1cd64255529b3d3c0e42583b726a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46533c377afe8e82004c91f5c9fb50c2" id="r_a46533c377afe8e82004c91f5c9fb50c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46533c377afe8e82004c91f5c9fb50c2">printArchiveInput</a> (const <a class="el" href="struct_stack.html">Stack</a> *stack)</td></tr>
+<tr class="memdesc:a46533c377afe8e82004c91f5c9fb50c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит архив в формате input.txt.  <br /></td></tr>
+<tr class="separator:a46533c377afe8e82004c91f5c9fb50c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb7f3e75b56ccf2d340e1f6d8dfce1e6" id="r_aeb7f3e75b56ccf2d340e1f6d8dfce1e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb7f3e75b56ccf2d340e1f6d8dfce1e6">printArchiveKodif</a> (const <a class="el" href="struct_stack.html">Stack</a> *stack)</td></tr>
+<tr class="memdesc:aeb7f3e75b56ccf2d340e1f6d8dfce1e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит архив в формате kodif.txt.  <br /></td></tr>
+<tr class="separator:aeb7f3e75b56ccf2d340e1f6d8dfce1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6196ef569ad65704fd15878d652877c" id="r_ab6196ef569ad65704fd15878d652877c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6196ef569ad65704fd15878d652877c">clearArchive</a> (<a class="el" href="struct_stack.html">Stack</a> *stack)</td></tr>
+<tr class="memdesc:ab6196ef569ad65704fd15878d652877c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очищает архив  <br /></td></tr>
+<tr class="separator:ab6196ef569ad65704fd15878d652877c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcbd4a5363c73b01be057cfec71a2f52" id="r_afcbd4a5363c73b01be057cfec71a2f52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcbd4a5363c73b01be057cfec71a2f52">loadArchiveFromBin</a> (<a class="el" href="struct_stack.html">Stack</a> *stack, const char *filename)</td></tr>
+<tr class="memdesc:afcbd4a5363c73b01be057cfec71a2f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загружает архив из бинарного файла  <br /></td></tr>
+<tr class="separator:afcbd4a5363c73b01be057cfec71a2f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd83cfddcdb1f8777e42133962f7b8ae" id="r_abd83cfddcdb1f8777e42133962f7b8ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd83cfddcdb1f8777e42133962f7b8ae">shellSort</a> (const char *filename)</td></tr>
+<tr class="memdesc:abd83cfddcdb1f8777e42133962f7b8ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сортирует данные Школьным Методом  <br /></td></tr>
+<tr class="separator:abd83cfddcdb1f8777e42133962f7b8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Работа с архивом жильцов </p>
+<p>Заголовочный файл содержит функции для загрузки, сохранения, отображения и управления архивом жильцов, организованным в виде стека. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="archive_8h_source.html">archive.h</a></p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="ab6196ef569ad65704fd15878d652877c" name="ab6196ef569ad65704fd15878d652877c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6196ef569ad65704fd15878d652877c">&#9670;&#160;</a></span>clearArchive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clearArchive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack.html">Stack</a> *</td>          <td class="paramname"><span class="paramname"><em>stack</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Очищает архив </p>
+<p>Удаляет все элементы из стека и освобождает занимаемую память. После выполнения стек остается пустым и готовым к повторному использованию.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stack</td><td>Указатель на стек для очистки </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afcbd4a5363c73b01be057cfec71a2f52" name="afcbd4a5363c73b01be057cfec71a2f52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcbd4a5363c73b01be057cfec71a2f52">&#9670;&#160;</a></span>loadArchiveFromBin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loadArchiveFromBin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack.html">Stack</a> *</td>          <td class="paramname"><span class="paramname"><em>stack</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Загружает архив из бинарного файла </p>
+<p>Восстанавливает стек из ранее сохраненного бинарного файла.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stack</td><td>Указатель на стек для заполнения </td></tr>
+    <tr><td class="paramname">filename</td><td>Имя бинарного файла для загрузки </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9fcf84ecc7d2fa878117f14c6580225b" name="a9fcf84ecc7d2fa878117f14c6580225b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fcf84ecc7d2fa878117f14c6580225b">&#9670;&#160;</a></span>loadDataFromInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loadDataFromInput </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack.html">Stack</a> *</td>          <td class="paramname"><span class="paramname"><em>stack</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Загружает данные из файла формата input.txt. </p>
+<p>Читает данные из текстового файла в формате input.txt и помещает их в стек. Формат файла должен содержать полные данные о жильцах.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stack</td><td>Указатель на стек для заполнения </td></tr>
+    <tr><td class="paramname">filename</td><td>Имя файла для чтения (input.txt)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Заметки</dt><dd>Формат файла input.txt: Номер_карты Адрес ФИО Кол-во_жильцов Дата_заселения Общая_площадь Избыточная_площадь </dd></dl>
+
+</div>
+</div>
+<a id="ad3be9381694e1ddb33112c1d7bb9c60c" name="ad3be9381694e1ddb33112c1d7bb9c60c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3be9381694e1ddb33112c1d7bb9c60c">&#9670;&#160;</a></span>loadDataFromKodif()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loadDataFromKodif </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack.html">Stack</a> *</td>          <td class="paramname"><span class="paramname"><em>stack</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Загружает данные из файла формата kodif.txt. </p>
+<p>Читает данные из текстового файла в формате kodif.txt и помещает их в стек. Формат файла содержит ограниченный набор данных о жильцах.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stack</td><td>Указатель на стек для заполнения </td></tr>
+    <tr><td class="paramname">filename</td><td>Имя файла для чтения (kodif.txt)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Заметки</dt><dd>Формат файла kodif.txt: Номер_карты Адрес ФИО Кол-во_жильцов </dd></dl>
+
+</div>
+</div>
+<a id="a46533c377afe8e82004c91f5c9fb50c2" name="a46533c377afe8e82004c91f5c9fb50c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46533c377afe8e82004c91f5c9fb50c2">&#9670;&#160;</a></span>printArchiveInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printArchiveInput </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_stack.html">Stack</a> *</td>          <td class="paramname"><span class="paramname"><em>stack</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выводит архив в формате input.txt. </p>
+<p>Отображает содержимое стека в табличном виде, соответствующем формату input.txt, со всеми полями структуры <a class="el" href="struct_tenant.html" title="Структура для хранения информации о жильце.">Tenant</a>.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stack</td><td>Указатель на стек для отображения </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aeb7f3e75b56ccf2d340e1f6d8dfce1e6" name="aeb7f3e75b56ccf2d340e1f6d8dfce1e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb7f3e75b56ccf2d340e1f6d8dfce1e6">&#9670;&#160;</a></span>printArchiveKodif()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printArchiveKodif </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_stack.html">Stack</a> *</td>          <td class="paramname"><span class="paramname"><em>stack</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выводит архив в формате kodif.txt. </p>
+<p>Отображает содержимое стека в табличном виде, соответствующем формату kodif.txt, только с основными полями информации о жильцах.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stack</td><td>Указатель на стек для отображения </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad91d1cd64255529b3d3c0e42583b726a" name="ad91d1cd64255529b3d3c0e42583b726a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad91d1cd64255529b3d3c0e42583b726a">&#9670;&#160;</a></span>saveToArchive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void saveToArchive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack.html">Stack</a> *</td>          <td class="paramname"><span class="paramname"><em>stack</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сохраняет данные стека в бинарный файл </p>
+<p>Записывает все данные из стека в бинарный файл для последующего восстановления.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stack</td><td>Указатель на стек с данными </td></tr>
+    <tr><td class="paramname">filename</td><td>Имя бинарного файла для сохранения </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abd83cfddcdb1f8777e42133962f7b8ae" name="abd83cfddcdb1f8777e42133962f7b8ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd83cfddcdb1f8777e42133962f7b8ae">&#9670;&#160;</a></span>shellSort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void shellSort </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сортирует данные Школьным Методом </p>
+<p>Сортирует данные в файле Школьным Методом по кол-ву жильцов.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Имя файла для сортировки </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="archive_8h.html">archive.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

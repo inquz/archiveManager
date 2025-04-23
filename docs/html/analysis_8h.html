@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Archive Manager: Файл include/analysis.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Archive Manager<span id="projectnumber">&#160;v1.0</span>
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('analysis_8h.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл analysis.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Функции анализа данных жильцов  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="base_8h_source.html">base.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для analysis.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="analysis_8h__incl.png" border="0" usemap="#ainclude_2analysis_8h" alt=""/></div>
+</div>
+</div>
+<p><a href="analysis_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a044fb54d37a10d4166f288faa5fd0d11" id="r_a044fb54d37a10d4166f288faa5fd0d11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a044fb54d37a10d4166f288faa5fd0d11">printTenantsWithExcessArea</a> (const <a class="el" href="struct_stack.html">Stack</a> *stack)</td></tr>
+<tr class="memdesc:a044fb54d37a10d4166f288faa5fd0d11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит список жильцов с избыточной площадью  <br /></td></tr>
+<tr class="separator:a044fb54d37a10d4166f288faa5fd0d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217a6567fa118e51dcf3b890e879e7a5" id="r_a217a6567fa118e51dcf3b890e879e7a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a217a6567fa118e51dcf3b890e879e7a5">compareAreaPerPerson</a> (const void *a, const void *b)</td></tr>
+<tr class="memdesc:a217a6567fa118e51dcf3b890e879e7a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция сравнения для сортировки по площади на человека  <br /></td></tr>
+<tr class="separator:a217a6567fa118e51dcf3b890e879e7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8d649f006f8859b2718cfb5abba1b6" id="r_aee8d649f006f8859b2718cfb5abba1b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee8d649f006f8859b2718cfb5abba1b6">printTopThreeMinimalAreaPerPerson</a> (const <a class="el" href="struct_stack.html">Stack</a> *stack)</td></tr>
+<tr class="memdesc:aee8d649f006f8859b2718cfb5abba1b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит топ-3 жильцов с минимальной площадью на человека  <br /></td></tr>
+<tr class="separator:aee8d649f006f8859b2718cfb5abba1b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Функции анализа данных жильцов </p>
+<p>Данный заголовочный файл содержит функции для анализа и вывода информации о жильцах на основе данных из стека. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="analysis_8h_source.html">analysis.h</a></p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="a217a6567fa118e51dcf3b890e879e7a5" name="a217a6567fa118e51dcf3b890e879e7a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a217a6567fa118e51dcf3b890e879e7a5">&#9670;&#160;</a></span>compareAreaPerPerson()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int compareAreaPerPerson </td>
+          <td>(</td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция сравнения для сортировки по площади на человека </p>
+<p>Используется как callback-функция для qsort(). Сравнивает два элемента <a class="el" href="struct_tenant.html" title="Структура для хранения информации о жильце.">Tenant</a> по значению площади на одного проживающего (totalArea / residentCount).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Указатель на первый элемент для сравнения </td></tr>
+    <tr><td class="paramname">b</td><td>Указатель на второй элемент для сравнения </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Отрицательное число, если a &lt; b Положительное число, если a &gt; b Ноль, если a == b </dd></dl>
+
+</div>
+</div>
+<a id="a044fb54d37a10d4166f288faa5fd0d11" name="a044fb54d37a10d4166f288faa5fd0d11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a044fb54d37a10d4166f288faa5fd0d11">&#9670;&#160;</a></span>printTenantsWithExcessArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printTenantsWithExcessArea </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_stack.html">Stack</a> *</td>          <td class="paramname"><span class="paramname"><em>stack</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выводит список жильцов с избыточной площадью </p>
+<p>Функция проходит по всем элементам стека и выводит информацию о жильцах, у которых значение excessArea больше 0.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stack</td><td>Указатель на стек с данными жильцов </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aee8d649f006f8859b2718cfb5abba1b6" name="aee8d649f006f8859b2718cfb5abba1b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee8d649f006f8859b2718cfb5abba1b6">&#9670;&#160;</a></span>printTopThreeMinimalAreaPerPerson()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printTopThreeMinimalAreaPerPerson </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_stack.html">Stack</a> *</td>          <td class="paramname"><span class="paramname"><em>stack</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выводит топ-3 жильцов с минимальной площадью на человека </p>
+<p>Функция создает временный массив из элементов стека, сортирует его по возрастанию площади на одного проживающего (totalArea / residentCount) и выводит информацию о первых трех жильцах из отсортированного массива.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stack</td><td>Указатель на стек с данными жильцов </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="analysis_8h.html">analysis.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

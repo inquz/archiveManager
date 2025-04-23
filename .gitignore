@@ -1,0 +1,8 @@
+*.exe
+*.pdb
+*.ilk
+*.obj
+/x64/
+/Debug/
+/Release/
+*.bin

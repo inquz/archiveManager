@@ -1,0 +1,7 @@
+* text=auto eol=lf charset=utf-8
+
+*.c   text charset=utf-8
+*.h   text charset=utf-8
+*.cpp text charset=utf-8
+*.md  text charset=utf-8
+*.txt text charset=utf-8

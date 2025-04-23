@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Archive Manager: Файл include/base.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Archive Manager<span id="projectnumber">&#160;v1.0</span>
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('base_8h.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Структуры данных</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл base.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Базовые структуры данных и функции работы со стеком для архива жильцов.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;conio.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для base.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="base_8h__incl.png" border="0" usemap="#ainclude_2base_8h" alt=""/></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="base_8h__dep__incl.png" border="0" usemap="#ainclude_2base_8hdep" alt=""/></div>
+</div>
+</div>
+<p><a href="base_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Структуры данных</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_tenant.html">Tenant</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура для хранения информации о жильце.  <a href="struct_tenant.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_stack_node.html">StackNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура узла стека.  <a href="struct_stack_node.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_stack.html">Stack</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура стека для хранения данных жильцов.  <a href="struct_stack.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a0c397a708cec89c74029582574516b30" id="r_a0c397a708cec89c74029582574516b30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c397a708cec89c74029582574516b30">MAX_NAME_LENGTH</a>&#160;&#160;&#160;30</td></tr>
+<tr class="memdesc:a0c397a708cec89c74029582574516b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальная длина строки с ФИО жильца.  <br /></td></tr>
+<tr class="separator:a0c397a708cec89c74029582574516b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b71bf0266170fc990217b80b27f40d" id="r_a13b71bf0266170fc990217b80b27f40d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13b71bf0266170fc990217b80b27f40d">MAX_ADDRESS_LENGTH</a>&#160;&#160;&#160;50</td></tr>
+<tr class="memdesc:a13b71bf0266170fc990217b80b27f40d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальная длина строки с адресом проживания.  <br /></td></tr>
+<tr class="separator:a13b71bf0266170fc990217b80b27f40d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94aa70086b6eee5f6cb297010fbaa78b" id="r_a94aa70086b6eee5f6cb297010fbaa78b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94aa70086b6eee5f6cb297010fbaa78b">DATE_LENGTH</a>&#160;&#160;&#160;11</td></tr>
+<tr class="memdesc:a94aa70086b6eee5f6cb297010fbaa78b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Длина строки с датой (в формате DD.MM.YYYY) включая нуль-терминатор.  <br /></td></tr>
+<tr class="separator:a94aa70086b6eee5f6cb297010fbaa78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:a296fce6633fd2a97f7b00330fbf71944" id="r_a296fce6633fd2a97f7b00330fbf71944"><td class="memItemLeft" align="right" valign="top">typedef struct Tenant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a296fce6633fd2a97f7b00330fbf71944">Tenant</a></td></tr>
+<tr class="separator:a296fce6633fd2a97f7b00330fbf71944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff2c7a01fd2dea927e2d7e481234b693" id="r_aff2c7a01fd2dea927e2d7e481234b693"><td class="memItemLeft" align="right" valign="top">typedef struct StackNode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff2c7a01fd2dea927e2d7e481234b693">StackNode</a></td></tr>
+<tr class="separator:aff2c7a01fd2dea927e2d7e481234b693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab93588e41f5d8a19169d05b668413806" id="r_ab93588e41f5d8a19169d05b668413806"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="#a8842be55b079ff9d6c0b682fe7067e7e">ArchiveFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab93588e41f5d8a19169d05b668413806">ArchiveFormat</a></td></tr>
+<tr class="separator:ab93588e41f5d8a19169d05b668413806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:a8842be55b079ff9d6c0b682fe7067e7e" id="r_a8842be55b079ff9d6c0b682fe7067e7e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8842be55b079ff9d6c0b682fe7067e7e">ArchiveFormat</a> { <a class="el" href="#a8842be55b079ff9d6c0b682fe7067e7eac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a>
+, <a class="el" href="#a8842be55b079ff9d6c0b682fe7067e7ea9f94c82392de70742ada4117c3e5759d">INPUT_FORMAT</a>
+, <a class="el" href="#a8842be55b079ff9d6c0b682fe7067e7eae225d664733b1c6fc5b5455030e66af6">KODIF_FORMAT</a>
+ }</td></tr>
+<tr class="memdesc:a8842be55b079ff9d6c0b682fe7067e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Формат загруженного архива.  <a href="#a8842be55b079ff9d6c0b682fe7067e7e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8842be55b079ff9d6c0b682fe7067e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:aade9c662f969998990f3346095e65570" id="r_aade9c662f969998990f3346095e65570"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aade9c662f969998990f3346095e65570">initStack</a> (<a class="el" href="struct_stack.html">Stack</a> *stack)</td></tr>
+<tr class="memdesc:aade9c662f969998990f3346095e65570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализирует стек.  <br /></td></tr>
+<tr class="separator:aade9c662f969998990f3346095e65570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1c05b911a13841d693b33a93aa81733" id="r_ae1c05b911a13841d693b33a93aa81733"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1c05b911a13841d693b33a93aa81733">push</a> (<a class="el" href="struct_stack.html">Stack</a> *stack, <a class="el" href="struct_tenant.html">Tenant</a> tenant)</td></tr>
+<tr class="memdesc:ae1c05b911a13841d693b33a93aa81733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет элемент в стек.  <br /></td></tr>
+<tr class="separator:ae1c05b911a13841d693b33a93aa81733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91bada64ae068351f3dcd4599b1438f2" id="r_a91bada64ae068351f3dcd4599b1438f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91bada64ae068351f3dcd4599b1438f2">pop</a> (<a class="el" href="struct_stack.html">Stack</a> *stack, <a class="el" href="struct_tenant.html">Tenant</a> *tenant)</td></tr>
+<tr class="memdesc:a91bada64ae068351f3dcd4599b1438f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Извлекает элемент из стека.  <br /></td></tr>
+<tr class="separator:a91bada64ae068351f3dcd4599b1438f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae057e9e131207b1d68e02fc98b64d56e" id="r_ae057e9e131207b1d68e02fc98b64d56e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae057e9e131207b1d68e02fc98b64d56e">isEmpty</a> (const <a class="el" href="struct_stack.html">Stack</a> *stack)</td></tr>
+<tr class="memdesc:ae057e9e131207b1d68e02fc98b64d56e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, пуст ли стек.  <br /></td></tr>
+<tr class="separator:ae057e9e131207b1d68e02fc98b64d56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9b090bb3ca9d438350739924aee3785" id="r_ad9b090bb3ca9d438350739924aee3785"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9b090bb3ca9d438350739924aee3785">reverseStack</a> (<a class="el" href="struct_stack.html">Stack</a> *stack)</td></tr>
+<tr class="memdesc:ad9b090bb3ca9d438350739924aee3785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Реверсирует порядок элементов в стеке.  <br /></td></tr>
+<tr class="separator:ad9b090bb3ca9d438350739924aee3785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Базовые структуры данных и функции работы со стеком для архива жильцов. </p>
+<p>Данный заголовочный файл определяет основные структуры данных и функции для работы с архивом жильцов, организованным в виде стека. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="base_8h_source.html">base.h</a></p>
+</div><h2 class="groupheader">Макросы</h2>
+<a id="a94aa70086b6eee5f6cb297010fbaa78b" name="a94aa70086b6eee5f6cb297010fbaa78b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94aa70086b6eee5f6cb297010fbaa78b">&#9670;&#160;</a></span>DATE_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATE_LENGTH&#160;&#160;&#160;11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Длина строки с датой (в формате DD.MM.YYYY) включая нуль-терминатор. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="base_8h_source.html">base.h</a> строка <a class="el" href="base_8h_source.html#l00034">34</a></p>
+
+</div>
+</div>
+<a id="a13b71bf0266170fc990217b80b27f40d" name="a13b71bf0266170fc990217b80b27f40d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13b71bf0266170fc990217b80b27f40d">&#9670;&#160;</a></span>MAX_ADDRESS_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_ADDRESS_LENGTH&#160;&#160;&#160;50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Максимальная длина строки с адресом проживания. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="base_8h_source.html">base.h</a> строка <a class="el" href="base_8h_source.html#l00028">28</a></p>
+
+</div>
+</div>
+<a id="a0c397a708cec89c74029582574516b30" name="a0c397a708cec89c74029582574516b30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c397a708cec89c74029582574516b30">&#9670;&#160;</a></span>MAX_NAME_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_NAME_LENGTH&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Максимальная длина строки с ФИО жильца. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="base_8h_source.html">base.h</a> строка <a class="el" href="base_8h_source.html#l00022">22</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Типы</h2>
+<a id="ab93588e41f5d8a19169d05b668413806" name="ab93588e41f5d8a19169d05b668413806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab93588e41f5d8a19169d05b668413806">&#9670;&#160;</a></span>ArchiveFormat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="#a8842be55b079ff9d6c0b682fe7067e7e">ArchiveFormat</a> <a class="el" href="#a8842be55b079ff9d6c0b682fe7067e7e">ArchiveFormat</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff2c7a01fd2dea927e2d7e481234b693" name="aff2c7a01fd2dea927e2d7e481234b693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff2c7a01fd2dea927e2d7e481234b693">&#9670;&#160;</a></span>StackNode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct StackNode StackNode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="base_8h_source.html">base.h</a> строка <a class="el" href="base_8h_source.html#l00057">57</a></p>
+
+</div>
+</div>
+<a id="a296fce6633fd2a97f7b00330fbf71944" name="a296fce6633fd2a97f7b00330fbf71944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a296fce6633fd2a97f7b00330fbf71944">&#9670;&#160;</a></span>Tenant</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct Tenant Tenant</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Перечисления</h2>
+<a id="a8842be55b079ff9d6c0b682fe7067e7e" name="a8842be55b079ff9d6c0b682fe7067e7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8842be55b079ff9d6c0b682fe7067e7e">&#9670;&#160;</a></span>ArchiveFormat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a8842be55b079ff9d6c0b682fe7067e7e">ArchiveFormat</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Формат загруженного архива. </p>
+<p>Используется для контроля типа загруженных данных и предотвращения смешивания разных форматов архивов. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a8842be55b079ff9d6c0b682fe7067e7eac157bdf0b85a40d2619cbc8bc1ae5fe2" name="a8842be55b079ff9d6c0b682fe7067e7eac157bdf0b85a40d2619cbc8bc1ae5fe2"></a>NONE&#160;</td><td class="fielddoc"><p>Архив не загружен. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8842be55b079ff9d6c0b682fe7067e7ea9f94c82392de70742ada4117c3e5759d" name="a8842be55b079ff9d6c0b682fe7067e7ea9f94c82392de70742ada4117c3e5759d"></a>INPUT_FORMAT&#160;</td><td class="fielddoc"><p>Данные загружены из файла input.txt. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8842be55b079ff9d6c0b682fe7067e7eae225d664733b1c6fc5b5455030e66af6" name="a8842be55b079ff9d6c0b682fe7067e7eae225d664733b1c6fc5b5455030e66af6"></a>KODIF_FORMAT&#160;</td><td class="fielddoc"><p>Данные загружены из файла kodif.txt. </p>
+</td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="base_8h_source.html">base.h</a> строка <a class="el" href="base_8h_source.html#l00087">87</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="aade9c662f969998990f3346095e65570" name="aade9c662f969998990f3346095e65570"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aade9c662f969998990f3346095e65570">&#9670;&#160;</a></span>initStack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initStack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack.html">Stack</a> *</td>          <td class="paramname"><span class="paramname"><em>stack</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Инициализирует стек. </p>
+<p>Устанавливает начальные значения указателя на вершину стека (NULL) и обнуляет счетчик элементов.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stack</td><td>Указатель на структуру стека для инициализации. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae057e9e131207b1d68e02fc98b64d56e" name="ae057e9e131207b1d68e02fc98b64d56e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae057e9e131207b1d68e02fc98b64d56e">&#9670;&#160;</a></span>isEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int isEmpty </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_stack.html">Stack</a> *</td>          <td class="paramname"><span class="paramname"><em>stack</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет, пуст ли стек. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stack</td><td>Указатель на стек для проверки. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>1 если стек пуст, 0 если содержит элементы. </dd></dl>
+
+</div>
+</div>
+<a id="a91bada64ae068351f3dcd4599b1438f2" name="a91bada64ae068351f3dcd4599b1438f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91bada64ae068351f3dcd4599b1438f2">&#9670;&#160;</a></span>pop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack.html">Stack</a> *</td>          <td class="paramname"><span class="paramname"><em>stack</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_tenant.html">Tenant</a> *</td>          <td class="paramname"><span class="paramname"><em>tenant</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Извлекает элемент из стека. </p>
+<p>Удаляет верхний элемент стека и копирует его данные в переданную структуру.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stack</td><td>Указатель на стек. </td></tr>
+    <tr><td class="paramname">tenant</td><td>Указатель на структуру для сохранения данных. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae1c05b911a13841d693b33a93aa81733" name="ae1c05b911a13841d693b33a93aa81733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1c05b911a13841d693b33a93aa81733">&#9670;&#160;</a></span>push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void push </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack.html">Stack</a> *</td>          <td class="paramname"><span class="paramname"><em>stack</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_tenant.html">Tenant</a></td>          <td class="paramname"><span class="paramname"><em>tenant</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавляет элемент в стек. </p>
+<p>Создает новый узел и помещает его на вершину стека.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stack</td><td>Указатель на стек. </td></tr>
+    <tr><td class="paramname">tenant</td><td>Данные жильца для добавления. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad9b090bb3ca9d438350739924aee3785" name="ad9b090bb3ca9d438350739924aee3785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9b090bb3ca9d438350739924aee3785">&#9670;&#160;</a></span>reverseStack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reverseStack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack.html">Stack</a> *</td>          <td class="paramname"><span class="paramname"><em>stack</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Реверсирует порядок элементов в стеке. </p>
+<p>Изменяет порядок элементов стека на противоположный.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stack</td><td>Указатель на стек для реверсирования. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="base_8h.html">base.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>
